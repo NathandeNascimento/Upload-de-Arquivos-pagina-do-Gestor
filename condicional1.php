@@ -76,6 +76,16 @@ include_once "config.php";
   </head>
   <body>
 
+  <div class="row">
+
+<div class=" col-md-11">
+  <a href="http://localhost/Projeto%20Arte%20Digital/gestor/" style="color: black; float: right; margin-top: 5px; " class="btn bg-success" type="submit">Entrar
+  </a>
+</div>
+
+</div>
+
+
     <form action="Upload.php">
     <div class="row">
  <div  col-md-6>
