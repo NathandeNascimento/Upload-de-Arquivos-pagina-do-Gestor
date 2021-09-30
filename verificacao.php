@@ -31,7 +31,7 @@
   <html>
   <h3>Seguência Numérica</h3>
   <form action="condicional1.php" method="post">
-    <input type="text" name="valida">
+    <input type="text" required name="valida">
     <a href="condicional1.php"><input type="submit"></a>
 
   </form>

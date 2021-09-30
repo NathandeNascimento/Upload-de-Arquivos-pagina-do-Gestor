@@ -47,8 +47,8 @@ if (isset($_FILES['arquivo'])) {
 </div>
 
 <form action="Upload.php" method="POST" enctype="multipart/form-data">
-   Arquivo <input type='file' require name='arquivo'> <br/><br/>
-   telefone <input type="tel" require name="tel" placeholder="+123 456 789 321" ><br/>
+   Arquivo <input type='file' required name='arquivo'> <br/><br/>
+   telefone <input type="tel" required name="tel" placeholder="+123 456 789 321" ><br/>
    <input type="Submit" value="Salvar">
 
 </form><br/>
