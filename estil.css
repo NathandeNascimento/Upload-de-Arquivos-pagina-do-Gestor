@@ -1,0 +1,62 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{ 
+    background: #31857C;   
+    background-image: url(img2/fundo2.jpg);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+      
+    
+
+}
+
+.centro{
+    margin-left: 30%; 
+    background: rgba(0, 0, 0, 0.522);
+    border-radius: 5%;
+    box-shadow:1px 2px 10px black, 3px 6px 20px black;
+    padding: 20px;
+    position: absolute;
+    margin-top: -500px;
+    
+  
+
+   
+}
+
+.centro:hover{
+    box-shadow:1px 2px 10px rgb(63, 63, 63), 3px 6px 20px rgb(138, 138, 138);
+    cursor: pointer;
+    
+    
+}
+ @media(max-width:768px){
+    .centro{
+        margin-left:7% ;
+        width: 90%;
+        margin-top: 30%;
+    
+    }
+    .menina{
+        margin-bottom: 0px;
+        border: 1px solid red;
+              
+    }
+    body{
+        background-image: url(img2/fundo3.jpg);
+        
+        
+    }
+    .fonte{
+        color: white;
+    }
+
+}
+
+
+
+/*  #C8D7FE  "A um passo da Sua liberdade musical" */
