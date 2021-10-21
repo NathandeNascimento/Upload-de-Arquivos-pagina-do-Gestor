@@ -1,0 +1,45 @@
+﻿*{margin: 0px;
+  padding: 0px;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.159);
+    background-image: url(../img2/letramusical2.png) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    font-size: 17px;
+    }
+
+    h1{text-align: center;
+    font-size: 7em;
+    font-family: Papyrus;
+    margin: 5px 0 25px 0;
+    color: black;
+  }
+
+    hr{background-color:  rgba(0, 0, 0, 0.398);}
+
+    .previw{
+      box-shadow: 10px 10px 10px rgb(0, 0, 0),10px 10px 60px rgb(0, 0, 0);
+      height: 400px; 
+      transition:1s;
+      
+      
+    }
+    @media(max-width:420px){h1{font-size: 2em;}
+    .previw{
+     
+      width: 90%;
+ 
+      height: 300px;
+
+      }
+      .env-email{margin-top: 5px;}
+      body{background-color:black;
+        background-image: url(../img2/letramusical.png) ;
+        color: white;
+      }
+      h1{color: white;}
+  }
