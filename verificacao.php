@@ -16,7 +16,7 @@ include_once "config.php";
 
 
   <!-- Estilo customizado -->
-  <link rel="stylesheet" type="text/css" href="estil.css">
+  <link rel="stylesheet" type="text/css" href="css/es.css">
 
 
 </head>
@@ -72,6 +72,7 @@ include_once "config.php";
 
 
   </form>
+  
   <!-- JavaScript (Opcional) -->
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

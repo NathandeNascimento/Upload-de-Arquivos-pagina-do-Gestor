@@ -32,6 +32,10 @@ body{
     color: white;
     box-sizing: border-box;
     }
+	.mar{ margin-left:30%;}
+	@media(max-width:416px){
+		.mar{margin-left: 2px;}
+	}
 
 </style>
 </head>
@@ -55,14 +59,16 @@ body{
 		<input type="hidden" name="id" value="<?php echo $row_arquivo['codigo']; ?>">
 
 		
-		<input type="text" name="senha" placeholder="Digite o nome completo" class="form-control col-md-5" style="margin-left: 30%;" value="<?php echo $row_arquivo['senha']; ?>">	
+		<input type="text" name="senha" placeholder="Digite o nome completo" class="form-control col-md-5 mar"  value="<?php echo $row_arquivo['senha']; ?>">	
 		 <div class="input-group-append">
 		<input type="submit" class="btn btn-outline-primary" value="Editar">
 		 </div>
 	</form>
 
 	</div>
-
+	<section>
+		<div style="text-align: center; margin: 50px 10px; border-radius: 50px; font-size: 1em; color: #ffffff;"> Todos os direitos reservados &copy; NN - Nathan Nascimento - 2021</div>
+	</section>
 
 	 <!-- JavaScript (Opcional) -->
       <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

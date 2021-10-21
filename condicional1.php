@@ -11,13 +11,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <!-- HTML5Shiv -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <![endif]-->
 
-    <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  
 <?
 //comunicação com DB...
 include_once "config.php";
@@ -26,19 +21,13 @@ include_once "config.php";
 
   // busca de arquivos
   $numAleatorio = $_POST['valida'] ;
-  $result_arquivos = "SELECT * FROM arquivo WHERE arquivo LIKE '$numAleatorio'";
+  $result_arquivos = "SELECT * FROM arquivo WHERE senha LIKE '$numAleatorio'";
   $resultado_arquivo = mysqli_query($conn, $result_arquivos);
   $rows_nomes = mysqli_fetch_array($resultado_arquivo);
-  $arquivo = $rows_nomes['arquivo'];
+  $arquivo = $rows_nomes['senha'];
   $nada = '';
   
 
-  // estrutura condicional desabilitar botao
-  //$numAleatorio = $_POST['valida'];
- //$numBanco = $arquivo;
- //echo $arquivo."<br/>";
-
- 
 
     if ($arquivo == $numAleatorio && $arquivo != $nada ) {
 
@@ -61,42 +50,67 @@ include_once "config.php";
 <script>
         function redirecionamento(){
             alert('Evento Disparado' );
-            window.location.href = "https://www.devmedia.com.br/javascript-redirect-redirecionando-o-usuario-com-window-location/39809";
+            window.location.href = "https://www.mediafire.com/file/tk49gbc6n7wrafa/Vais_me_achar.mp3/file";
         }
     </script>
 
-<?  
-  
-  
+ <!-- Estilo customizado -->
+ <style>
 
+   body{background: black;
+  overflow-x:hidden;}
+.upload{
+  box-shadow: 5px 5px 10px rgb(0, 0, 0),10px 10px 30px rgb(0, 0, 0);
+}
 
-?>
+  .upload:hover{
+    transition: 1s;
+    box-shadow: 15px 15px 20px rgb(31, 169, 255),10px 10px 30px rgb(0, 0, 0);
+
+  
+  }
+
+@media(max-width:370px){
+  .botao1{font-size: 30% ;
+          margin-top: 150px;
+          
+}
+}
+
+@media(max-width:892px){
+  .botao1{font-size: 50% ;
+          margin-top: 50px;
+          
+}
+}
+@media(max-width:492px){
+  .botao1{font-size: 30% ;
+          margin-top: 100px;
+          
+}
+}
+  </style>
+  
 
     <title>Botão</title>
   </head>
   <body>
 
-  <div class="row">
+ 
 
-<div class=" col-md-11">
-  <a href="http://localhost/Projeto%20Arte%20Digital/gestor/" style="color: black; float: right; margin-top: 5px; " class="btn bg-success" type="submit">Entrar
-  </a>
-</div>
+    <form >
+   
+    <div class="row ">
+      <div class="col-md-12 text-center botao1" >
+       <!-- Botão de Upload-->
+        <button onclick="redirecionamento()" style="margin-top:12%; font-size: 4em;" class="btn bg-primary p-5 upload " type="button">Dowload
+        </button>
 
-</div>
-
-
-    <form action="Upload.php">
-    <div class="row">
- <div  col-md-6>
-     <button onclick="redirecionamento()" style="margin: 50px 50px;" class="btn bg-primary  "  type="button" >  Click aqui para fazer o dowload
-     </button> <br/>
-     <button  style="margin: 50px 50px;" class="btn bg-primary  "  type="submit"  >Click aqui para fazer o Upload
-    </button>
-
- </div>
+      </div>
 
     </div>
+
+    
   </form>
       <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

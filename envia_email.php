@@ -52,7 +52,18 @@ $senha = $rows_nomes['senha'];
             transition: 3s;
             box-shadow: 1px 1px 10px white, 3px 6px 50px white;
         }
+        .mar-l{margin-left:28%;}
 
+        @media(max-width:769px){
+            .mar-l{margin-left:0%;}
+           
+        
+        }
+        @media(max-width:416px){
+            .mar-l{margin-left:0%;}
+            .container{margin:50% 5%; width: 90%;}
+        
+        }
     </style>
 
 </head>
@@ -61,18 +72,22 @@ $senha = $rows_nomes['senha'];
     
     <form action="./email/env_email.php" method="post">
    
-    <div class="col-md-5" style=" margin-left:28%;" >
+    <div class="col-md-5 mar-l" style=" " >
     <label for="">E-mail:</label></br>
     <input type="email" name="email0" class="form-control" value="<?echo $email?>">
     </div>
 
-    <div class="col-md-5 " style=" margin-left:28%;">
+    <div class="col-md-5 mar-l " style=" ">
     <label for="">Chave:</label></br>
     <input type="text" name="sequencia" class="form-control " value="<?echo $senha?>">
     <input type="submit" class="btn btn-primary "  value="Enviar">
     </div>
     </form>
     </div>
+
+    <section>
+		<div style="text-align: center; margin: 0px 10px; border-radius: 50px; font-size: 20px; color: #ffffff;"> Todos os direitos reservados &copy; NN - Nathan Nascimento - 2021</div>
+	</section>
     <!-- JavaScript (Opcional) -->
       <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
