@@ -30,10 +30,10 @@
        // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
         $mail->CharSet = 'UTF-8';
         $mail->isSMTP();
-        $mail->Host       = 'smtp.hostinger.com';
+        $mail->Host       = '';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'testenathandev.com@testnathandev.com';
-        $mail->Password   = '253426nS';
+        $mail->Password   = '';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
         $mail->Port       = 465;
 
